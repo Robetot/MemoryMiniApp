@@ -1,0 +1,37 @@
+{
+    "baseBuilder":  {
+                        "ownerAddress":  "0x393d4edC3CC905b2dB282d2d0a6eF47d8ae5A10a"
+                    },
+    "accountAssociation":  {
+                               "signature":  "# Initialize git repo",
+                               "header":  "cd \"C:\\Users\\Raidel\\MemoryMiniApp\"",
+                               "payload":  ""
+                           },
+    "miniapp":  {
+                    "webhookUrl":  "",
+                    "splashBackgroundColor":  "#0f1724",
+                    "version":  "1",
+                    "splashImageUrl":  "https://Robetot.github.io/MemoryMiniApp//splash.png",
+                    "ogTitle":  "Memory Mini App",
+                    "description":  "Challenge your friends to match emojis as fast as possible!",
+                    "homeUrl":  "https://Robetot.github.io/MemoryMiniApp/",
+                    "ogDescription":  "Fun emoji matching game.",
+                    "primaryCategory":  "games",
+                    "ogImageUrl":  "https://Robetot.github.io/MemoryMiniApp//og.png",
+                    "iconUrl":  "https://Robetot.github.io/MemoryMiniApp//icon.png",
+                    "tags":  [
+                                 "miniapp",
+                                 "game",
+                                 "memory"
+                             ],
+                    "screenshotUrls":  [
+                                           "https://Robetot.github.io/MemoryMiniApp//s1.png",
+                                           "https://Robetot.github.io/MemoryMiniApp//s2.png"
+                                       ],
+                    "noindex":  false,
+                    "subtitle":  "Fun memory game",
+                    "heroImageUrl":  "https://Robetot.github.io/MemoryMiniApp//og.png",
+                    "name":  "Memory Mini App",
+                    "tagline":  "Play instantly"
+                }
+}
