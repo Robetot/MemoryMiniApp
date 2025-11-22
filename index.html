@@ -1,48 +1,42 @@
-﻿<!DOCTYPE html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Memory Mini App</title>
-<link rel='stylesheet' href='style.css'>
-<script src='https://cdn.jsdelivr.net/npm/@farcaster/miniapp-sdk/dist/sdk.min.js'></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Mini App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class='container'>
+  <div class="container">
     <h1>Memory Mini App</h1>
-    <div class='info'>
-        <div>Level: <span id='level'>1</span></div>
-        <div>Moves: <span id='moves'>0</span></div>
-        <div>Time: <span id='time'>0</span>s</div>
-        <button id='restart'>Restart</button>
-    </div>
-    <div id='board' class='board'></div>
-
-    <div id='finish' class='overlay hidden'>
-        <div class='panel'>
-            <h2 id='finishTitle'>Level Complete!</h2>
-            <p>Level: <span id='finalLevel'>1</span></p>
-            <p>Moves: <span id='finalMoves'>0</span></p>
-            <p>Time: <span id='finalTime'>0</span>s</p>
-            <p>Score: <span id='finalScore'>0</span></p>
-            <button id='nextLevel'>Next Level</button>
-            <button id='submitScore'>Submit Score</button>
-        </div>
+    <div class="info">
+      <div>Level: <span id="level">1</span></div>
+      <div>Moves: <span id="moves">0</span></div>
+      <div>Time: <span id="time">0</span>s</div>
+      <button id="restart">Restart</button>
     </div>
 
-    <div id='leaderboard' class='leaderboard'>
-        <h3>Top Scores</h3>
-        <ol id='topScores'></ol>
+    <div id="board" class="board"></div>
+
+    <div id="finish" class="overlay hidden">
+      <div class="panel">
+        <h2 id="finishTitle">Level Complete!</h2>
+        <p>Level: <span id="finalLevel">1</span></p>
+        <p>Moves: <span id="finalMoves">0</span></p>
+        <p>Time: <span id="finalTime">0</span>s</p>
+        <p>Score: <span id="finalScore">0</span></p>
+        <button id="nextLevel">Next Level</button>
+        <button id="submitScore">Submit Score</button>
+      </div>
     </div>
-</div>
-<script src='script.js'></script>
-<script>
-document.addEventListener('DOMContentLoaded', async () => {
-    if(window.sdk){ 
-        await sdk.actions.ready(); 
-        console.log('Farcaster SDK ready.'); 
-    }
-});
-</script>
+
+    <div id="leaderboard" class="leaderboard">
+      <h3>Top Scores</h3>
+      <ol id="topScores"></ol>
+    </div>
+  </div>
+
+  <!-- IMPORTANT: we remove the Farcaster SDK here for now -->
+  <script src="script.js" defer></script>
 </body>
 </html>
